@@ -17,17 +17,17 @@ class ToDoViewController: UITableViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         //comment intialization of items because it's already saved in the plist with all the data
-        let newItem = Item()
-        newItem.title = "First item"
-        itemArray.append(newItem)
-
-        let newItem2 = Item()
-        newItem2.title = "Second item"
-        itemArray.append(newItem2)
-
-        let newItem3 = Item()
-        newItem3.title = "Third item"
-        itemArray.append(newItem3)
+//        let newItem = Item()
+//        newItem.title = "First item"
+//        itemArray.append(newItem)
+//
+//        let newItem2 = Item()
+//        newItem2.title = "Second item"
+//        itemArray.append(newItem2)
+//
+//        let newItem3 = Item()
+//        newItem3.title = "Third item"
+//        itemArray.append(newItem3)
         
 //        if let items = defaults.array(forKey: "ToDoListArray") as? [Item] {
 //            itemArray = items
