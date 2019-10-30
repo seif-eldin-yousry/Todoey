@@ -6,9 +6,11 @@
 //  Copyright © 2019 Seif Yousry. All rights reserved.
 //
 
-import Foundation
+////////delete class because we now have database
 
-class Item: Codable {
-    var title : String = ""
-    var done : Bool = false
-}
+//import Foundation
+//
+//class Item: Codable {
+//    var title : String = ""
+//    var done : Bool = false
+//}
