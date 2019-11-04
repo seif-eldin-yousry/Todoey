@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,8 +13,9 @@
 		2AA38E562360F3B300F13580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AA38E552360F3B300F13580 /* Assets.xcassets */; };
 		2AA38E592360F3B300F13580 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AA38E572360F3B300F13580 /* LaunchScreen.storyboard */; };
 		2AAA7B0623641E3B00DB6A7D /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2AAA7B0423641E3B00DB6A7D /* DataModel.xcdatamodeld */; };
-		2AB74168236196F7003085F5 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74167236196F7003085F5 /* Item.swift */; };
 		2AD47F6F23682EBA00DD6766 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD47F6E23682EBA00DD6766 /* CategoryViewController.swift */; };
+		2AD6154F2369E07200B6D51C /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD6154E2369E07200B6D51C /* Category.swift */; };
+		2AD615512369E16700B6D51C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD615502369E16700B6D51C /* Item.swift */; };
 		660C047CA8D9080F1614354C /* Pods_Todoey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CD068C7DABD7188357AB62 /* Pods_Todoey.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,8 +29,9 @@
 		2AA38E582360F3B300F13580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2AA38E5A2360F3B300F13580 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AAA7B0523641E3B00DB6A7D /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
-		2AB74167236196F7003085F5 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		2AD47F6E23682EBA00DD6766 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		2AD6154E2369E07200B6D51C /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		2AD615502369E16700B6D51C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		8A1496232CD7AF39F55B47B9 /* Pods-Todoey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todoey.release.xcconfig"; path = "Target Support Files/Pods-Todoey/Pods-Todoey.release.xcconfig"; sourceTree = "<group>"; };
 		8A6AE4E78D47B9D1E3006632 /* Pods-Todoey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todoey.debug.xcconfig"; path = "Target Support Files/Pods-Todoey/Pods-Todoey.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,7 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				2AAA7B0423641E3B00DB6A7D /* DataModel.xcdatamodeld */,
-				2AB74167236196F7003085F5 /* Item.swift */,
+				2AD6154E2369E07200B6D51C /* Category.swift */,
+				2AD615502369E16700B6D51C /* Item.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -126,7 +129,6 @@
 				8A6AE4E78D47B9D1E3006632 /* Pods-Todoey.debug.xcconfig */,
 				8A1496232CD7AF39F55B47B9 /* Pods-Todoey.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,8 +250,9 @@
 				2AD47F6F23682EBA00DD6766 /* CategoryViewController.swift in Sources */,
 				2AA38E512360F3B100F13580 /* ToDoListViewController.swift in Sources */,
 				2AAA7B0623641E3B00DB6A7D /* DataModel.xcdatamodeld in Sources */,
-				2AB74168236196F7003085F5 /* Item.swift in Sources */,
+				2AD615512369E16700B6D51C /* Item.swift in Sources */,
 				2AA38E4F2360F3B100F13580 /* AppDelegate.swift in Sources */,
+				2AD6154F2369E07200B6D51C /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,7 +408,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.seif.Todoey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -424,7 +427,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.seif.Todoey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
